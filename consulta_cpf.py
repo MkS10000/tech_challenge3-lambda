@@ -22,11 +22,10 @@ def lambda_handler(event, context):
     if consulta_cpf(cpf):
         return {
             'statusCode': 200,
-            'body': json.dumps('CPF está cadastrado')
+            'body': ({"token" : "01f8be76-6d32-4cec-9525-e8a4dd1c78f7"})
         }
     else:
         return {
             'statusCode': 404,
-            'body': json.dumps('CPF não está cadastrado')
-        }    
-
+            'body': json.dumps('CPF nao esta cadastrado')
+        }
