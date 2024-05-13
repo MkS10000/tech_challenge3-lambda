@@ -14,8 +14,6 @@ def consulta_cpf(cpf):
     return 'Item' in resposta
 
 
-
-
 def lambda_handler(event, context):
     cpf = event.get('cpf', '')
 
